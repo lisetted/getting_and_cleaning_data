@@ -15,7 +15,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 Dataset "tidy" includes:
 subject - index of subject in study
 acitivy - activity being performed when measurement was taken
-variable - the measurement that was taken on the subject for that activity
+variable - the measurement that was taken on the subject for that activity in Hz
 value - mean of variable
 
 
