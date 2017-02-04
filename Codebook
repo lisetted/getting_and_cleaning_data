@@ -1,9 +1,9 @@
-Data from 
+Data from:
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on 
 Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). 
 Vitoria-Gasteiz, Spain. Dec 2012
 
-data includes 2 factors (activity, and subject) and 65 mean and standard deviation fields from Anguita et al's study 
+This data includes 2 factors (activity, and subject) and 65 mean and standard deviation fields from Anguita et al's study 
 using smartphone accelarometers.
 
 More information can be found here:
@@ -12,80 +12,83 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 Raw data can be found here:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
+
 Dataset "tidy" includes:
 subject - index of subject in study
-acitivy - activity being performed when measurement was taken
-variable - the measurement that was taken on the subject for that activity in Hz
-value - mean of variable
-
-
-
-Dataset "Data" includes
-[1] "activity"                          
- [2] "subject"                           
- [3] "tBodyAcc.mean...X"                 
- [4] "tBodyAcc.mean...Y"                 
- [5] "tBodyAcc.mean...Z"                 
- [6] "tBodyAcc.std...X"                  
- [7] "tBodyAcc.std...Y"                  
- [8] "tBodyAcc.correlation...Y.Z"        
- [9] "tGravityAcc.mean...X"              
-[10] "tGravityAcc.mean...Y"              
-[11] "tGravityAcc.mean...Z"              
-[12] "tGravityAcc.std...X"               
-[13] "tGravityAcc.std...Y"               
-[14] "tGravityAcc.correlation...Y.Z"     
-[15] "tBodyAccJerk.mean...X"             
-[16] "tBodyAccJerk.mean...Y"             
-[17] "tBodyAccJerk.mean...Z"             
-[18] "tBodyAccJerk.std...X"              
-[19] "tBodyAccJerk.std...Y"              
-[20] "tBodyAccJerk.correlation...Y.Z"    
-[21] "tBodyGyro.mean...X"                
-[22] "tBodyGyro.mean...Y"                
-[23] "tBodyGyro.mean...Z"                
-[24] "tBodyGyro.std...X"                 
-[25] "tBodyGyro.std...Y"                 
-[26] "tBodyGyro.correlation...Y.Z"       
-[27] "tBodyGyroJerk.mean...X"            
-[28] "tBodyGyroJerk.mean...Y"            
-[29] "tBodyGyroJerk.mean...Z"            
-[30] "tBodyGyroJerk.std...X"             
-[31] "tBodyGyroJerk.std...Y"             
-[32] "tBodyGyroJerk.correlation...Y.Z"   
-[33] "tBodyAccMag.mean.."                
-[34] "tBodyAccMag.arCoeff..4"            
-[35] "tGravityAccMag.mean.."             
-[36] "tGravityAccMag.arCoeff..4"         
-[37] "tBodyAccJerkMag.mean.."            
-[38] "tBodyAccJerkMag.arCoeff..4"        
-[39] "tBodyGyroMag.mean.."               
-[40] "tBodyGyroMag.arCoeff..4"           
-[41] "tBodyGyroJerkMag.mean.."           
+activity - activity being performed when measurement was taken (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+Mean, standard deviation, and correlation of 
+ - 3-axial (x,y,z) linear acceleration and 3-axial angular velocity at a constant rate of 50Hz
+ 
+ List of data elements:
+[1] "subject"                           
+ [2] "activity"                          
+ [3] "tBodyAcc.mean.X"                 
+ [4] "tBodyAcc.mean.Y"                 
+ [5] "tBodyAcc.mean.Z"                 
+ [6] "tBodyAcc.std.X"                  
+ [7] "tBodyAcc.std.Y"                  
+ [8] "tBodyAcc.correlation.Y.Z"        
+ [9] "tGravityAcc.mean.X"              
+[10] "tGravityAcc.mean.Y"              
+[11] "tGravityAcc.mean.Z"              
+[12] "tGravityAcc.std.X"               
+[13] "tGravityAcc.st.Y"               
+[14] "tGravityAcc.correlation.Y.Z"     
+[15] "tBodyAccJerk.mean.X"             
+[16] "tBodyAccJerk.mean.Y"             
+[17] "tBodyAccJerk.mean.Z"             
+[18] "tBodyAccJerk.std.X"              
+[19] "tBodyAccJerk.std.Y"              
+[20] "tBodyAccJerk.correlation.Y.Z"    
+[21] "tBodyGyro.mean.X"                
+[22] "tBodyGyro.mean.Y"                
+[23] "tBodyGyro.mean.Z"                
+[24] "tBodyGyro.std.X"                 
+[25] "tBodyGyro.std.Y"                 
+[26] "tBodyGyro.correlation.Y.Z"       
+[27] "tBodyGyroJerk.mean.X"            
+[28] "tBodyGyroJerk.mean.Y"            
+[29] "tBodyGyroJerk.mean.Z"            
+[30] "tBodyGyroJerk.std.X"             
+[31] "tBodyGyroJerk.std.Y"             
+[32] "tBodyGyroJerk.correlation.Y.Z"   
+[33] "tBodyAccMag.mean."                
+[34] "tBodyAccMag.arCoeff.4"            
+[35] "tGravityAccMag.mean."             
+[36] "tGravityAccMag.arCoeff.4"         
+[37] "tBodyAccJerkMag.mean."            
+[38] "tBodyAccJerkMag.arCoeff.4"        
+[39] "tBodyGyroMag.mean."               
+[40] "tBodyGyroMag.arCoeff.4"           
+[41] "tBodyGyroJerkMag.mean."           
 [42] "tBodyGyroJerkMag.arCoeff..4"       
-[43] "fBodyAcc.mean...X"                 
-[44] "fBodyAcc.mean...Y"                 
-[45] "fBodyAcc.mean...Z"                 
-[46] "fBodyAcc.std...X"                  
-[47] "fBodyAcc.std...Y"                  
-[48] "fBodyAcc.bandsEnergy...25.48.2"    
-[49] "fBodyAccJerk.mean...X"             
-[50] "fBodyAccJerk.mean...Y"             
-[51] "fBodyAccJerk.mean...Z"             
-[52] "fBodyAccJerk.std...X"              
-[53] "fBodyAccJerk.std...Y"              
-[54] "fBodyAccJerk.bandsEnergy...25.48.2"
-[55] "fBodyGyro.mean...X"                
-[56] "fBodyGyro.mean...Y"                
-[57] "fBodyGyro.mean...Z"                
-[58] "fBodyGyro.std...X"                 
-[59] "fBodyGyro.std...Y"                 
-[60] "fBodyGyro.bandsEnergy...25.48.2"   
-[61] "fBodyAccMag.mean.."                
-[62] "fBodyAccMag.kurtosis.."            
-[63] "fBodyBodyAccJerkMag.mean.."        
-[64] "fBodyBodyAccJerkMag.kurtosis.."    
-[65] "fBodyBodyGyroMag.mean.."           
-[66] "fBodyBodyGyroMag.kurtosis.."       
-[67] "fBodyBodyGyroJerkMag.mean.."
+[43] "fBodyAcc.mean.X"                 
+[44] "fBodyAcc.mean.Y"                 
+[45] "fBodyAcc.mean.Z"                 
+[46] "fBodyAcc.std.X"                  
+[47] "fBodyAcc.std.Y"                  
+[48] "fBodyAcc.bandsEnergy.25.48.2"    
+[49] "fBodyAccJerk.mean.X"             
+[50] "fBodyAccJerk.mean.Y"             
+[51] "fBodyAccJerk.mean.Z"             
+[52] "fBodyAccJerk.std.X"              
+[53] "fBodyAccJerk.std.Y"              
+[54] "fBodyAccJerk.bandsEnergy.25.48.2"
+[55] "fBodyGyro.mean.X"                
+[56] "fBodyGyro.mean.Y"                
+[57] "fBodyGyro.mean.Z"                
+[58] "fBodyGyro.std.X"                 
+[59] "fBodyGyro.std.Y"                 
+[60] "fBodyGyro.bandsEnergy.25.48.2"   
+[61] "fBodyAccMag.mean"                
+[62] "fBodyAccMag.kurtosis"            
+[63] "fBodyBodyAccJerkMag.mean"        
+[64] "fBodyBodyAccJerkMag.kurtosis"    
+[65] "fBodyBodyGyroMag.mean"           
+[66] "fBodyBodyGyroMag.kurtosis"       
+[67] "fBodyBodyGyroJerkMag.mean"   
+
+
+
+
 
